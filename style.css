@@ -5,22 +5,22 @@
 }
 :root {
   --text-color: #fff;
-  --bg-url: url(./bg-mobile.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./moon-stars.svg);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
   --text-color: #000;
-  --bg-url: url(./bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.2);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url: url(./sun.svg);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
@@ -92,8 +92,8 @@ div é elemento block e image é elemento inline (inline não consegue ser margi
 .light #switch button {
   animation: slide-in 0.4s forwards;
 }
-#switch button:hover{
-  outline: 8px solid var(--highlight-color) ;
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 #switch span {
   display: block;
@@ -171,10 +171,10 @@ footer {
 /*media queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./bg-desktop.jpg);
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
   .light {
-    --bg-url: url(./bg-desktop-light.jpg);
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
 /*anomação*/
@@ -187,9 +187,10 @@ footer {
   }
 }
 @keyframes slide-out {
-  from{left:50%
-}
-to{
-  left: 0%;
-}
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
 }
