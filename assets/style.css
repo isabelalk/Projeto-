@@ -2,15 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-} 
- :root{
-  --text-color: #fff; 
+}
+:root {
+  --text-color: #fff;
   --bg-url: url(./bg-mobile.jpg);
-  --stroke-color:rgba(255, 255, 255, 0.5);
+  --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color:rgba(255, 255, 255, 0.2);
+  --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./moon-stars.svg);
 }
 
@@ -20,9 +19,8 @@
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.2);
-  --highlight-color:rgba(0, 0, 0, 0.1);
+  --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./sun.svg);
-
 }
 
 body {
@@ -44,7 +42,8 @@ body * {
   color: var(--text-color);
 }
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   padding: 0 24px;
   margin: 56px auto 0px;
 }
@@ -92,14 +91,14 @@ div é elemento block e image é elemento inline (inline não consegue ser margi
   right: 0;
   left: initial;
 }
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   background-color: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur (4px);
-  -webkit-backdrop-filter: blur(4px) ;
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
 /* links  - o a é um display FLEX e não block*/
@@ -113,7 +112,6 @@ ul {
   flex-direction: column;
   gap: 16px;
   padding: 24px 0;
-  
 }
 
 ul li a {
@@ -134,16 +132,16 @@ ul li a {
   transition: background 0.5s;
 }
 
-ul li a:hover{
-   background-color: var(--surface-color-hover);
+ul li a:hover {
+  background-color: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
 
 #social-links {
   display: flex;
-   justify-content: center;
+  justify-content: center;
   padding: 24px 0;
-  font: size 24px; 
+  font: size 24px;
 }
 
 #social-links a {
@@ -156,13 +154,12 @@ ul li a:hover{
 }
 
 #social-links a:hover {
- background: var(--highlight-color);
+  background: var(--highlight-color);
 }
 
 /*rodapé*/
-footer{
+footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
 }
-
