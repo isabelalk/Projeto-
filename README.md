@@ -47,7 +47,7 @@ VocÊ pode visualizar o layout do projeto [aqui](https://www.figma.com/file/0Fc1
 Esse projeto está sob a licença MIT.
 
 ---
-
+Fazendo um teste no git bash 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
 
 
